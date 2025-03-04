@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Currency Converter</title>
+    <!-- CSS File -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/home_user/home.html">HOME</a></li>
+                <li><a href="/book_flight/book_flight.html">Book a Flight</a></li>
+                <li><a href="/Travel Advisory/advisory.html">Prepare & Travel</a></li>
+                <li><a href="/contact_us/contact-Us.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 id="title">Realtime Currency Converter <i class="fas fa-coins"></i></h1>
+        <img src="/airline logo.jpg" id="coinSticker" alt="coin exchange sticker" class="sticker">
+        
+        <input type="number" id="userValue" min="1" name="userInput" placeholder="100" class="input-field">
+        
+        <div class="selecterContainer">
+            <select id="fromCurrency" name="fromCurrency" title="Convert From">
+                <option value="" disabled selected>Choose a currency</option>
+            </select>
+            
+            <button type="button" id="switchCurrency" class="switch-btn">🔁</button>
+
+            <select id="toCurrency" name="toCurrency" title="Convert To">
+                <option value="" disabled selected>Choose a currency</option>
+            </select>
+        </div>
+        
+        <p id="status" class="status"></p>
+        
+        <button type="button" id="btn" class="convert-btn">Convert <i class="fas fa-arrow-right"></i></button>
+        
+        <p id="result" class="result"></p>
+    </div>
+    <footer>
+        <p>&copy; 2024 Skyhulk Airline Reservation</p>
+    </footer>
+    <!-- JavaScript File -->
+    <script type="module" src="./script.js" defer></script>
+</body>
+</html>
